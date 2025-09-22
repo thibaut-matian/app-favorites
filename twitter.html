@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter - Mes Apps Favorites</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'pixel': ['"Press Start 2P"', 'cursive'],
+                    },
+                    colors: {
+                        'pixel-bg': '#1a1a1a',
+                        'pixel-text': '#c0c0c0',
+                        'pixel-accent': '#4a9eff',
+                        'pixel-secondary': '#2d3748',
+                        'twitter-blue': '#1da1f2',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-pixel-bg text-pixel-text font-pixel min-h-screen">
+    <!-- Header -->
+    <header class="bg-pixel-secondary pixel-border border-b-4 border-t-0 border-x-0 sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <nav class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div class="text-lg sm:text-xl text-pixel-accent">
+                    🎮 Mes Apps Favorites
+                </div>
+                <ul class="flex flex-wrap justify-center gap-2 text-xs sm:text-sm">
+                    <li><a href="index.html" class="pixel-button px-3 py-2 rounded text-white">Accueil</a></li>
+                    <li><a href="twitter.html" class="pixel-button px-3 py-2 rounded text-white bg-twitter-blue border-twitter-blue">Twitter</a></li>
+                    <li><a href="youtube.html" class="pixel-button px-3 py-2 rounded text-white">YouTube</a></li>
+                    <li><a href="crunchyroll.html" class="pixel-button px-3 py-2 rounded text-white">Crunchyroll</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8 flex-grow">
+        <!-- Hero Section -->
+        <div class="twitter-gradient rounded-lg p-8 mb-8 text-center">
+            <div class="text-6xl mb-4">🐦</div>
+            <h1 class="text-2xl sm:text-4xl mb-4 text-white">
+                Twitter / X
+            </h1>
+            <p class="text-sm sm:text-base max-w-2xl mx-auto leading-relaxed text-white opacity-90">
+                La plateforme qui connecte le monde en temps réel.
+                Découvrez, partagez et restez informé.
+            </p>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <!-- Pourquoi j'aime Twitter -->
+            <div class="pixel-card rounded-lg p-6">
+                <h2 class="text-lg mb-4 text-pixel-accent flex items-center gap-2">
+                    💙 Pourquoi j'aime Twitter
+                </h2>
+                <ul class="space-y-3 text-xs">
+                    <li class="flex items-start gap-2">
+                        <span class="text-twitter-blue">▶</span>
+                        <span>Actualités en temps réel du monde entier</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-twitter-blue">▶</span>
+                        <span>Communauté tech et développement</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-twitter-blue">▶</span>
+                        <span>Discussions passionnantes et débats</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-twitter-blue">▶</span>
+                        <span>Suivre mes créateurs favoris</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-twitter-blue">▶</span>
+                        <span>Partager mes projets et réflexions</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Fonctionnalités préférées -->
+            <div class="pixel-card rounded-lg p-6">
+                <h2 class="text-lg mb-4 text-pixel-accent flex items-center gap-2">
+                    ⭐ Fonctionnalités préférées
+                </h2>
+                <div class="space-y-4">
+                    <div class="border border-twitter-blue rounded p-3">
+                        <div class="font-bold text-twitter-blue text-xs mb-1">Threads</div>
+                        <div class="text-xs">Pour développer des idées complexes</div>
+                    </div>
+                    <div class="border border-twitter-blue rounded p-3">
+                        <div class="font-bold text-twitter-blue text-xs mb-1">Spaces</div>
+                        <div class="text-xs">Conversations audio en direct</div>
+                    </div>
+                    <div class="border border-twitter-blue rounded p-3">
+                        <div class="font-bold text-twitter-blue text-xs mb-1">Lists</div>
+                        <div class="text-xs">Organiser mes sources d'info</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats personnelles -->
+        <div class="pixel-card rounded-lg p-6 mb-8">
+            <h3 class="text-lg mb-6 text-pixel-accent text-center">Mon usage Twitter</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="border border-twitter-blue rounded p-4">
+                    <div class="text-2xl text-twitter-blue mb-2">5+</div>
+                    <div class="text-xs">Années d'usage</div>
+                </div>
+                <div class="border border-twitter-blue rounded p-4">
+                    <div class="text-2xl text-twitter-blue mb-2">50+</div>
+                    <div class="text-xs">Tweets par mois</div>
+                </div>
+                <div class="border border-twitter-blue rounded p-4">
+                    <div class="text-2xl text-twitter-blue mb-2">200+</div>
+                    <div class="text-xs">Comptes suivis</div>
+                </div>
+                <div class="border border-twitter-blue rounded p-4">
+                    <div class="text-2xl text-twitter-blue mb-2">∞</div>
+                    <div class="text-xs">Découvertes</div>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="pixel-card rounded-lg p-6">
+            <h3 class="text-lg mb-4 text-pixel-accent flex items-center gap-2">
+                💡 Mes conseils Twitter
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <h4 class="text-sm text-twitter-blue mb-2">🎯 Pour bien commencer</h4>
+                    <ul class="text-xs space-y-1">
+                        <li>• Créez des listes thématiques</li>
+                        <li>• Utilisez les hashtags pertinents</li>
+                        <li>• Interagissez avec la communauté</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm text-twitter-blue mb-2">📱 Astuces mobiles</h4>
+                    <ul class="text-xs space-y-1">
+                        <li>• Activez les notifications importantes</li>
+                        <li>• Utilisez les raccourcis gestuels</li>
+                        <li>• Programmez vos tweets</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-pixel-secondary pixel-border border-t-4 border-b-0 border-x-0 mt-12">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div class="text-xs text-center sm:text-left">
+                    © 2025 Mes Apps Favorites | Design Pixel Art
+                </div>
+                <div class="flex gap-4 text-xs">
+                    <span>🎮 Fait avec passion</span>
+                    <span>✨ Tailwind CSS</span>
+                    <span>🌙 DaisyUI</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
